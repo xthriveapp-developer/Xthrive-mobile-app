@@ -2,12 +2,14 @@ import { StyleSheet } from "react-native";
 import { LayoutEnum, ScreenEnum, ProximaNova } from "../constants/ScreenEnum";
 // import { Colors } from "react-native/Libraries/NewAppScreen";
 import Colors from '../constants/Colors'
+import Font from "../constants/Font";
 
 export const LoginPageStyles = StyleSheet.create({
     Container: {
         flex: 1,
+        // marginTop : 400,
         alignItems: 'center',
-        backgroundColor: Colors.background
+        // backgroundColor: Colors.background,
     },
     imageConatiner: {
         justifyContent: 'center',
@@ -24,7 +26,7 @@ export const LoginPageStyles = StyleSheet.create({
         height: ScreenEnum.WIDTH * .04,
     },
     titleBlock: {
-        marginTop: 80,
+        marginTop: 80 ,
     },
     Logintitle:
     {
@@ -44,10 +46,11 @@ export const LoginPageStyles = StyleSheet.create({
     },
     title: {
         alignSelf: 'flex-start',
-        color: 'white'
+        color: Colors.accent,
+        fontFamily: Font['poppins-semiBold']
     },
     EmailFormContainer: {
-        marginTop: 35
+        marginTop: 310
     },
     PasswordFormContainer: {
         marginTop: 50
@@ -84,15 +87,15 @@ export const LoginPageStyles = StyleSheet.create({
     },
     forgotpasswordContainer: {
         display: 'flex',
-        alignSelf: 'flex-end',
+        alignSelf: 'center',
         marginTop: ScreenEnum.HEIGHT / 45,
     },
     forgotPasswordButton: {
-        color: 'white',
+        color: LayoutEnum.GREY,
         fontSize: 16,
         fontFamily: ProximaNova.REGULAR,
-        textAlign: 'right',
-        alignSelf: 'flex-end'
+        textAlign: 'center',
+        alignSelf: 'center'
     },
     loginButtonContainer: {
         marginBottom: ScreenEnum.HEIGHT / 105
@@ -102,7 +105,9 @@ export const LoginPageStyles = StyleSheet.create({
         backgroundColor: Colors.accent,
         paddingVertical: 12,
         alignItems: 'center',
-        borderRadius: 8
+        borderRadius: 8,
+        width: ScreenEnum.WIDTH * 0.6,
+         marginTop: ScreenEnum.HEIGHT * 0.02
     },
     reloadButton:
     {
@@ -141,7 +146,7 @@ export const LoginPageStyles = StyleSheet.create({
     requestAccessContainer: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: ScreenEnum.HEIGHT * 0.09,
+        marginTop: ScreenEnum.HEIGHT * 0.31,
         marginBottom: ScreenEnum.HEIGHT * 0.06,
     },
     requestAccessText: {

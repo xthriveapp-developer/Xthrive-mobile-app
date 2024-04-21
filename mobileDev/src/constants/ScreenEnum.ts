@@ -79,6 +79,7 @@ export enum LayoutEnum {
     POLYLINE_CLR = '#46A5AA',
     PROJECT_NBR = '#417B9B',
     TEXT_INPUT_HEADER = '#49454F',
+    GREY = '#808080'
 }
 
 export enum ProximaNova {

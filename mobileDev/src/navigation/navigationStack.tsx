@@ -12,7 +12,7 @@ const NavigationStack = () => {
   return (
     <Stack.Navigator initialRouteName="OnBoarding">
       <Stack.Screen name="OnBoarding" component={OnBoardingScreen} options={{ headerShown: false }} />
-      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Login" component={LoginScreen}  options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };
