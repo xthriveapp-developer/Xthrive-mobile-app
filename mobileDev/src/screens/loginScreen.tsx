@@ -46,6 +46,10 @@ const LoginScreen: React.FunctionComponent<IStackScreenProps> = (props) => {
     navigation.navigate('Forgot Password')
   };
 
+  const handleSingUp = () => {
+    navigation.navigate('SignUp')
+  }
+
   const initialValues: LoginFormProps = {
     username: '',
     password: '',
@@ -164,10 +168,11 @@ const LoginScreen: React.FunctionComponent<IStackScreenProps> = (props) => {
             </Formik>
           </View>
           <View style={[LoginPageStyles.requestAccessContainer, (currentOrientation == OrientationEnum.LANDSCAPE) ? { height: currentScale.width * 0.05, marginTop: currentScale.width * 0.03 } : { height: currentScale.height * 0.1 }]}>
-            <Text style={[LoginPageStyles.requestAccessText, (currentOrientation == OrientationEnum.LANDSCAPE) ? { marginTop: 0 } : { marginTop: -30 }]}>New to Xthrive? <Text style={[LoginPageStyles.requestAccessButtonText]} onPress={() => console.log('Request Access')}>Register Here</Text></Text>
+            <Text style={[LoginPageStyles.requestAccessText, (currentOrientation == OrientationEnum.LANDSCAPE) ? { marginTop: 0 } :
+              { marginTop: -30 }]}>New to Xthrive? <Text style={[LoginPageStyles.requestAccessButtonText]} onPress={handleSingUp}>Register Here</Text></Text>
             <Text style={[LoginPageStyles.needHelpText, (currentOrientation == OrientationEnum.LANDSCAPE) ? { paddingTop: 0 } : { paddingTop: 10 }]}>Need help? Contact us at</Text>
             <Text style={[LoginPageStyles.needHelpTextNumber]}>
-              +91-8861817682
+              +91-8951049082
             </Text>
           </View>
         </ScrollView>

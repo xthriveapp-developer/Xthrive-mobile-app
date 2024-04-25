@@ -65,6 +65,7 @@ export const LoginPageStyles = StyleSheet.create({
         fontSize: 16,
         borderColor: 'white',
         height: 44,
+        width: ScreenEnum.WIDTH * 0.6
     },
     inputDark:
     {
