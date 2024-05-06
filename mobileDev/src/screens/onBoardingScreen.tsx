@@ -2,25 +2,25 @@ import React from 'react';
 import {
   Dimensions,
   ImageBackground,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
-import FontSize from '../constants/FontSize';
-import Spacing from '../constants/Spacing';
-import Colors from '../constants/Colors';
 import Font from '../constants/Font';
-import Button from '../components/Button';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import Colors from '../constants/Colors';
+import Spacing from '../constants/Spacing';
+import FontSize from '../constants/FontSize';
 import { RootStackParamList } from '../../types';
+import LinearGradient from 'react-native-linear-gradient';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'OnBoarding'>;
 
 const OnBoardingScreen: React.FC<Props> = ({ navigation }) => {
   const { height } = Dimensions.get('window');
-
+  console.log(height , 'height')
+  const scale = Dimensions.get('screen');
+  console.log(scale, 'scale')
   const handlePress = () => {
     console.log('clicked')
     navigation.navigate('Login')
@@ -72,7 +72,7 @@ const OnBoardingScreen: React.FC<Props> = ({ navigation }) => {
               style={{
                 fontSize: FontSize.base,
                 color: Colors.black,
-                fontFamily: Font['poppins-semiBold'],
+                fontFamily: Font['poppins-bold'],
               }}>
               Get Started
             </Text>
@@ -84,5 +84,3 @@ const OnBoardingScreen: React.FC<Props> = ({ navigation }) => {
 };
 
 export default OnBoardingScreen;
-
-const styles = StyleSheet.create({});

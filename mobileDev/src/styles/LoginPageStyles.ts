@@ -5,6 +5,11 @@ import Colors from '../constants/Colors'
 import Font from "../constants/Font";
 
 export const LoginPageStyles = StyleSheet.create({
+    mainContainer : {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     Container: {
         flex: 1,
         // marginTop : 400,
@@ -26,31 +31,45 @@ export const LoginPageStyles = StyleSheet.create({
         height: ScreenEnum.WIDTH * .04,
     },
     titleBlock: {
-        marginTop: 80 ,
+        // backgroundColor : 'pink',
+        alignItems : 'flex-start',
     },
     Logintitle:
     {
         fontFamily: ProximaNova.EXTRABOLD,
-        fontSize: 30,
+        fontSize: 60,
         color: 'white',
         fontStyle: 'normal',
-        fontWeight: '300',
+        fontWeight: 'bold',
         textAlign: 'center'
     },
     formContainer: {
-        alignItems: 'center'
+        marginTop : 150,
+        // alignItems: 'center',
+        // backgroundColor : 'yellow',
+        flex : 1,
+        display : 'flex',
+        flexDirection : 'column'
     },
     errormessage: {
         alignItems: 'center',
-        marginVertical: 20,
+        marginHorizontal : 5,
+        color : LayoutEnum.ERROR_CLR
     },
     title: {
         alignSelf: 'flex-start',
-        color: Colors.accent,
-        fontFamily: Font['poppins-semiBold']
+        color: Colors.text,
+        // fontFamily: Font['poppins-semiBold']
+        fontFamily: 'Blinker_300Light'
+    },
+    titleText: {
+        alignSelf: 'flex-start',
+        color: LayoutEnum.GREYTEXT,
+        // fontFamily: Font['poppins-semiBold']
+        fontFamily: ProximaNova.REGULAR
     },
     EmailFormContainer: {
-        marginTop: 310
+        // marginTop: 310
     },
     PasswordFormContainer: {
         marginTop: 50
@@ -65,7 +84,8 @@ export const LoginPageStyles = StyleSheet.create({
         fontSize: 16,
         borderColor: 'white',
         height: 44,
-        width: ScreenEnum.WIDTH * 0.6
+        width: ScreenEnum.WIDTH * 0.6,
+        marginHorizontal : 5
     },
     inputDark:
     {
@@ -87,9 +107,10 @@ export const LoginPageStyles = StyleSheet.create({
         height: 44
     },
     forgotpasswordContainer: {
-        display: 'flex',
-        alignSelf: 'center',
-        marginTop: ScreenEnum.HEIGHT / 45,
+        alignSelf: 'flex-end',
+        marginTop:-42,
+        marginRight : 32
+        // backgroundColor : 'red'
     },
     forgotPasswordButton: {
         color: LayoutEnum.GREY,
@@ -107,8 +128,9 @@ export const LoginPageStyles = StyleSheet.create({
         paddingVertical: 12,
         alignItems: 'center',
         borderRadius: 8,
-        width: ScreenEnum.WIDTH * 0.6,
-         marginTop: ScreenEnum.HEIGHT * 0.02
+        width: ScreenEnum.WIDTH * 0.8,
+        marginTop: ScreenEnum.HEIGHT * 0.02,
+        marginHorizontal : 5
     },
     reloadButton:
     {
@@ -147,8 +169,9 @@ export const LoginPageStyles = StyleSheet.create({
     requestAccessContainer: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: ScreenEnum.HEIGHT * 0.31,
+        marginTop: ScreenEnum.HEIGHT * 0.07,
         marginBottom: ScreenEnum.HEIGHT * 0.06,
+        marginHorizontal : 5,
     },
     requestAccessText: {
         color: Colors.text,

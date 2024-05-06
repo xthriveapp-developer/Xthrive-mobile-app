@@ -79,7 +79,8 @@ export enum LayoutEnum {
     POLYLINE_CLR = '#46A5AA',
     PROJECT_NBR = '#417B9B',
     TEXT_INPUT_HEADER = '#49454F',
-    GREY = '#808080'
+    GREY = '#4D4C4C',
+    GREYTEXT = '#C1C1C1'
 }
 
 export enum ProximaNova {
@@ -87,6 +88,7 @@ export enum ProximaNova {
     SEMIBOLD = 'proximanova-semibold',
     REGULAR = 'proximanova-regular',
     EXTRABOLD = 'proximanova-bold',
+    BLINKEREXTRABOLD = 'Blinker'
 }
 
 export enum Blair {
