@@ -97,5 +97,22 @@ export const SignUpPageStyles = StyleSheet.create({
         fontFamily: ProximaNova.SEMIBOLD,
         fontWeight: 'bold',
         fontSize: 10
-    }
+    },
+    formContainer: {
+        marginTop : 100,
+        // alignItems: 'center',
+        // backgroundColor : 'yellow',
+        flex : 1,
+        display : 'flex',
+        flexDirection : 'column'
+    },
+    signUpTitle:
+    {
+        fontFamily: ProximaNova.EXTRABOLD,
+        fontSize: 40,
+        color: 'white',
+        fontStyle: 'normal',
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
 });
